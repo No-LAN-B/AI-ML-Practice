@@ -20,4 +20,5 @@ print(f'\nTest accuracy: {accuracy}')\
 import joblib
 joblib.dump(clf, 'random_forest_model.pkl')
 
-#load later?
+#load later
+#git fix?
