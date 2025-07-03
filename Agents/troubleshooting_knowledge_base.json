@@ -1,0 +1,10 @@
+{
+  "slow_internet": {
+    "symptom":  "My internet is very slow.",
+    "solution": "Try restarting your router and checking your connection settings."
+  },
+  "app_crashing": {
+    "symptom":  "The app keeps crashing on startup.",
+    "solution": "Update the app to the latest version and restart your device."
+  }
+}
