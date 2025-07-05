@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .chat-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .messages {
+            height: 300px;
+            overflow-y: scroll;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .user-input {
+            display: flex;
+        }
+        .user-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .user-input button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="chat-container">
+        <div class="messages" id="messages">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <div class="user-input">
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <div class="quick-replies">
+            <button onclick="quickReply('What is your name?')">What is your name?</button>
+            <button onclick="quickReply('Hello')">Hello</button>
+            <button onclick="quickReply('Goodbye')">Goodbye</button>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
